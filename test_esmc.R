@@ -10,9 +10,9 @@ library(eSMC)
 ##############
 
 L=10 # Length in Mb of the sequences
-M=2 # nb haplotype
+M=4 # nb haplotype
 L=L*1000000
-nsim=2 # Number of simulation
+nsim=1 # Number of simulation
 Pop=10^4 # Population size
 theta=500 # theta waterson per Mb
 theta=(theta*L/1000000)
