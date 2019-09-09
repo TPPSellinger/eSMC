@@ -22,7 +22,7 @@ For application to real data :
 
 Step three : Download one data file from one of our repository (https://github.com/TPPSellinger/Daphnia_pulex_data or https://github.com/TPPSellinger/Arabidopsis_thaliana_data )
 
-
+Step four :
 
 
 Warning : Do not worry if the message "unsuccessfull convergence" appear. This message is printed by the package "BB" which optimizes the likelihood. We limited the number of itirations to optimize the likelihood to speed up the algorithm (since convergence speed decreases). 
