@@ -5,8 +5,13 @@ Step one : Download the package.
 
 Step two : Download the script to install the package. Make sure the path of the package is correct (You may have to modify the script depending on where the package has been downloaded). Execute script to install package on local machine.
 
+Application to simulated data (For Beginners) : 
 
-For application to simulated data : 
+Step three : Download the R script easy_test_esmc.R
+
+Step four : Execute the code. It can it some minutes (10 to 30 min depending of your machine)
+
+Application to simulated data ( for advanced User) : 
 
 Step three : Download a simulator like ms, scrm (or our modified version escrm) or msprime.
 
