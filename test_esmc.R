@@ -10,19 +10,19 @@ library(eSMC)
 ##############
 
 L=10 # Length in Mb of the sequences
-M=4 # nb haplotype
+M=2 # nb haplotype
 L=L*1000000
 nsim=1 # Number of simulation
 Pop=10^4 # Population size
-theta=500 # theta waterson per Mb
-theta=(theta*L/1000000)
+mu=2.5*10^-8  # Mutation rate per position per generation <
+theta=(mu*L*2*Pop) # theta waterson per Mb
 rho=0.5 # ratio r/mu
 total=list()
 sigma=0 # selfing rate
 beta=1 # germination rate
 theta_o=theta
 rho_o=rho*theta
-mu <- theta/(2*Pop*L)
+
 ################################
 # Building Demographic history #
 ################################
@@ -75,7 +75,7 @@ O_total=Get_sim_data(path,L,M,nsim)
 
 for(x in 1:nsim){
   # esmc
-  test=eSMC(n=500,rho=1,O_total[[x]],maxit =20,symbol_number=30,BoxB=c(0.05,1),BoxP=c(3,3),Boxr=c(1,1),Boxs=c(0,0.97),pop=F,SB=F,SF=F,Rho=T,Check=F,BW=F,NC=1,path_simu ="~/escrm",pop_vect =rep(25,20)) 
+  test=eSMC(n=40,rho=1,O_total[[x]],maxit =20,symbol_number=30,BoxB=c(0.05,1),BoxP=c(3,3),Boxr=c(1,1),Boxs=c(0,0.97),pop=F,SB=F,SF=F,Rho=T,Check=F,BW=F,NC=1,path_simu ="~/escrm",pop_vect =rep(2,20)) 
   total[[(1+length(total))]]=test
 }
 
@@ -83,7 +83,7 @@ for(x in 1:nsim){
 # Plot results #
 ################
 
-Plot_esmc_results(total,mu,WP=F,NC=nsim,x=c(100,10^5),y=c(2,6))
+Plot_esmc_results(total,mu,WP=F,LIST=TRUE,x=c(100,10^5),y=c(2,6))
       
     
   
