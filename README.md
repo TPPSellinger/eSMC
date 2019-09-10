@@ -59,5 +59,7 @@ Warning : Using sequence length smaller than 1 Mb can lead to poor results.
 
 Warning : Using data with less than 1000 SNPs will lead to poor results.
 
-Warning : Our method cannot distinguish self-fertilization from seed bank. Hence one should not simultaneously estimate both parameter without strong prior knowledge. In addition, user should use as result the set of values the germination and self-fertilization can take and not one single set of values.  
+Warning : Our method cannot distinguish self-fertilization from seed bank. Hence one should not simultaneously estimate both parameter without strong prior knowledge. In addition, user should use as result the set of values the germination and self-fertilization can take and not one single set of values.
+
+Warning : If there are more recombinations than mutations, the model can underestimate the recombination rate.
 
