@@ -21,7 +21,7 @@ Step four : Execute the code. It can take some minutes (10 to 30 min depending o
 
 Application to simulated data (For advanced user or Unix user ) : 
 
-Step three : Download our simulator escrm (https://github.com/TPPSellinger/escrm). Compile the code or use the executable for Unix machine (help to compîle can be found on https://github.com/scrm/scrm )
+Step three : Download our simulator escrm (https://github.com/TPPSellinger/escrm). Compile the code or use the executable for Unix machine (help to compile can be found on https://github.com/scrm/scrm )
 
 Step 3.5 : If using a different simulator, output file  might be in a different format as the one of ms. Hence, output must be process into a multihetsep file (https://github.com/stschiff/msmc/blob/master/guide.md) or into a file in the ms format. 
 
