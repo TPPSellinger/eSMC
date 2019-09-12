@@ -11,9 +11,9 @@ Step one : Download the package.
 
 Step two : Download the script to install the package. Make sure the path of the package is correct (You may have to modify the script depending on where the package has been downloaded). Execute the script to install package on your local machine.
 
-Application to simulated data (For beginning user on Unix and Windows users) : 
+Application to simulated data (For beginning users on Unix and Windows users) : 
 
-Note : This script it based on the original simulator scrm through the R package scrm. Hence, seed banks and self-fertilization cannot be simulated. See the next section for simulating data with seed banks and self-fertilization.
+Note : This script is based on the original simulator scrm through the R package scrm. Hence, seed banks and self-fertilization cannot be simulated. See the next section for simulating data with seed banks and self-fertilization.
 
 Step three : Download the R script easy_test_esmc.R
 
@@ -23,7 +23,7 @@ Application to simulated data (For advanced users on Unix user ) :
 
 Step three : Download our simulator escrm (https://github.com/TPPSellinger/escrm). Compile the code or use the executable for Unix machine (help to compile can be found on https://github.com/scrm/scrm )
 
-Step 3.5 : If using a different simulator, output file might be in a different format. Hence, output must be processed into a multihetsep file (https://github.com/stschiff/msmc/blob/master/guide.md) or into a file in the ms format. 
+Step 3.5 : If using a different simulator, output file might be in a different format. Hence, output must be processed into a multihetsep file (https://github.com/stschiff/msmc/blob/master/guide.md), into a file in the ms format or a segregating matrix. 
 
 Step four : Download the script test_esmc.R. This script is an example on how to run eSMC on simulated data (using the simulator escrm).
 
