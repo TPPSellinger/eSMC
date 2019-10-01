@@ -1,5 +1,5 @@
 # eSMC
-Contains all requirement to run eSMC
+Contains all requirement to run eSMC. A detailed description of the method can be found here: https://doi.org/10.1101/701185
 
 Input file :
 
@@ -7,17 +7,17 @@ The input file for eSMC is a "Segregating Matrix". Matrix must have M+1 lines (M
 
 How to use eSMC :
 
-Step one : Download the package.
+Step one : Download or clone the repository eSMC. Extract the zip file.
 
-Step two : Download the script to install the package. Make sure the path of the package is correct (You may have to modify the script depending on where the package has been downloaded). Execute the script to install package on your local machine.
+Step two : Open the script : install_eSMC.R in Rstudio or a text editor. Make sure the path of the package (eSMC_0.2.0.tar.gz) is correct (line 6). If the package is in a different folder, modify the path to the correct folder. Execute the script to install the package on your local machine (by selecting everything and then clicking run in Rstudio).
 
 Application to simulated data (For beginning users on Unix and Windows users) : 
 
-Note : This script is based on the original simulator scrm through the R package scrm. Hence, seed banks and self-fertilization cannot be simulated. See the next section for simulating data with seed banks and self-fertilization.
+Note : This script is based on the original simulator scrm through the R package scrm. Hence, seed banks (beta) and self-fertilization (sigma) cannot be simulated. See the next section for simulating data with seed banks and self-fertilization.
 
-Step three : Download the R script easy_test_esmc.R
+Step three : Open the downloaded R script easy_test_esmc.R
 
-Step four : Execute the code. This may take some time (10 to 30 minutes depending on your machine)
+Step four : Execute the script. This may take some time (10 to 30 minutes depending on your machine). This script simulates data under a saw-tooth demographic scenario. When analysis is finished, the estimated demographic history is ploted with the estimated recombination rate over mutation rate (r/mu) .
 
 Application to simulated data (For advanced users on Unix user ) : 
 
@@ -27,23 +27,23 @@ Step 3.5 : If using a different simulator, output file might be in a different f
 
 Step four : Download the script test_esmc.R. This script is an example on how to run eSMC on simulated data (using the simulator escrm).
 
-Step 4.5 : If using a different simulator than escrm, one must modify the script responsable for simulating the data.
+Step 4.5 : If using a different simulator than escrm, one must modify the script responsable for simulating the data (line 29 to 69 line ).
 
-Step five : Make sure the path to the simulator is correct.
+Step five : Make sure the path to the simulator is correct (line 61) .
 
-Step six : Execute the code. This might take a little bit of time (10 to 30 min depending on your machine)
+Step six : Execute the code. This might take a little bit of time (10 to 30 min depending on your machine). When the analysis is finished, the estimated demographic history is ploted, as well as the self-fertilization rate (sigma) and the germination rate  (beta).
 
 Application to real data :
 
-Step three : Download one data file from one of our repository (https://github.com/TPPSellinger/Daphnia_pulex_data or https://github.com/TPPSellinger/Arabidopsis_thaliana_data )
+Step three : In the repository, there is Daphnia pulex data. To test the method on different or more data set, one can download  data files from one of our repository (https://github.com/TPPSellinger/Daphnia_pulex_data or https://github.com/TPPSellinger/Arabidopsis_thaliana_data )
 
-Step four : Download the script test_data_esmc.R.
+Step four : Open the R script test_data_esmc.R.
 
-Step five : Add the path to the data file.
+Step five : Modify the path to the data file (line 36) if the file is in a different folder.
 
-Step six : Fill the ecological prior knowledge.
+Step six : Modify the ecological prior knowledge if working on a different data set (line 14 to 36 ).
 
-Step seven : Execute the code (10 min to 1 h depending on the selected data, the analysis and your machine)
+Step seven : Execute the code (10 min to 1 h depending on the data set, the analysis and your machine)
 
 General Advice : 
 
