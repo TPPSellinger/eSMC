@@ -73,9 +73,13 @@ O_total=Get_sim_data(path,L,M,nsim)
 # Run analysis #
 ################
 
+ER=T # TRUE to estimate recombination
+SB=F # TRUE to estimate seed bank
+SF=F # TRUE to estimate selfing
+
 for(x in 1:nsim){
   # esmc
-  test=eSMC(n=40,rho=1,O_total[[x]],maxit =20,symbol_number=30,BoxB=c(0.05,1),BoxP=c(3,3),Boxr=c(1,1),Boxs=c(0,0.97),pop=F,SB=F,SF=F,Rho=T,Check=F,BW=F,NC=1,path_simu ="~/escrm",pop_vect =rep(2,20)) 
+  test=eSMC(n=40,rho=1,O_total[[x]],maxit =20,symbol_number=30,BoxB=c(0.05,1),BoxP=c(3,3),Boxr=c(1,1),Boxs=c(0,0.97),pop=F,SB=SB,SF=SF,Rho=ER,Check=F,BW=F,NC=1,path_simu ="~/escrm",pop_vect =rep(2,20)) 
   total[[(1+length(total))]]=test
 }
 
