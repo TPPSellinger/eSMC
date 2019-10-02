@@ -39,11 +39,11 @@ Step three : In the repository, there is Daphnia pulex data. To test the method 
 
 Step four : Open the R script test_data_esmc.R.
 
-Step five : Modify the path to the data file (line 36) if the file is in a different folder.
+Step five : Extract the data file and modify the path to the data file (line 37) and name of file (line 39 to 44) if necessary.
 
-Step six : Modify the ecological prior knowledge if working on a different data set (line 14 to 36 ).
+Step six : Modify the ecological prior knowledge if working on a different data set (line 12 to 27 ).
 
-Step seven : Execute the code (10 min to 1 h depending on the data set, the analysis and your machine)
+Step seven : Execute the code (1h to 2h depending on the data set, the analysis and your machine). To reduce computation time one can reduce the number of hidden state space (n) and reduce the number of analysed scaffold (line 34).
 
 General Advice : 
 
