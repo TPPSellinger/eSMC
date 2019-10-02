@@ -75,11 +75,12 @@ O_total=get_data_R_scrm(Data,M=M,L=L)
 ################
 # Run analysis #
 ################
-
+rec=vector()
 for(x in 1:nsim){
   # esmc
   result=eSMC(n=40,rho=1,O_total[[x]],maxit =20,symbol_number=30,BoxB=c(0.05,1),BoxP=c(3,3),Boxr=c(1,1),Boxs=c(0,0.97),pop=F,SB=F,SF=F,Rho=T,Check=F,BW=F,NC=1,path_simu ="~/escrm",pop_vect =rep(2,20)) 
   total[[(1+length(total))]]=result
+  rec=c(rec,(result$rho/result$mu))
 }
 
 ################
@@ -87,7 +88,8 @@ for(x in 1:nsim){
 ################
 
 Plot_esmc_results(total,mu,WP=F,LIST=TRUE,x=c(100,10^5),y=c(2,6))
-
+Lines<-  list(bquote("r/mu*:" ~ .(round(mean(rec),digits = 2))))
+legend("topright",legend =do.call(expression, Lines), lty = 1,col="red")
 
 
 
