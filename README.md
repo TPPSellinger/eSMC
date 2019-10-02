@@ -49,6 +49,8 @@ General Advice :
 
 Note : Do not worry if the message "unsuccessfull convergence" appears. This message is printed by the package "BB" because we limited the number of itirations when optimizing the likelihood.
 
+Note : Using more than one chromosome in one analysis can increase computation time.
+
 Warning : Using more than 10 haplotypes can considerably increase computation time.
 
 Warning : Using more than 80 hidden states can considerably increase computation time.
