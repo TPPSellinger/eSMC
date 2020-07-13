@@ -59,7 +59,7 @@ If the following statements are true, poor results are to be expected:
 
 It is important to note:
 - Our method cannot distinguish self-fertilization from seed banks. Simultaneously estimating both varaibles without strong prior knowledge is not advised. 
-
+- Please use the latest version (as bugs are fixed and/or new features added)
 
 If you encounter any issue, feel free to contact me at : thibaut.sellinger@tum.de
 
