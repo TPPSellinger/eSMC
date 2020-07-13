@@ -9,7 +9,7 @@ How to use eSMC:
 
 Step one: Download or clone the repository eSMC (We recommand the use of the latest version). Extract the zip file.
 
-Step two: Open the script install_eSMC.R in Rstudio or a text editor. Make sure the path of the package (eSMC_1.0.3.tar.gz) is correct (line 6), name of package may depend on it's version. If the package is in a different folder, modify the path to the correct folder. Execute the script to install the package on your local machine (by selecting everything and then clicking run in Rstudio).
+Step two: Open the script install_eSMC.R in Rstudio or a text editor. Make sure the path of the package (eSMC_1.0.4.tar.gz) is correct (line 6), name of package may depend on it's version. If the package is in a different folder, modify the path to the correct folder. Execute the script to install the package on your local machine (by selecting everything and then clicking run in Rstudio).
 
 Depending on what data (simulated or real) you will be using instructions starting from "Step three" may vary. Below we provide the steps to follow if you are using simulated data using the original scrm R package, our escrm simulator (for advanced users), or real data.
 
