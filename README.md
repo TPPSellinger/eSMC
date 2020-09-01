@@ -9,7 +9,7 @@ How to use eSMC:
 
 Step one: Download or clone the repository eSMC (We recommand the use of the latest version). Extract the zip file.
 
-Step two: Open the script install_eSMC.R in Rstudio or a text editor. Make sure the path of the package (eSMC_1.0.4.tar.gz) is correct (line 6), name of package may depend on it's version. If the package is in a different folder, modify the path to the correct folder. Execute the script to install the package on your local machine (by selecting everything and then clicking run in Rstudio).
+Step two: Open the script install_eSMC.R in Rstudio or a text editor. Make sure the path of the package (eSMC_1.0.5.tar.gz) is correct (line 6), name of package may depend on it's version. If the package is in a different folder, modify the path to the correct folder. Execute the script to install the package on your local machine (by selecting everything and then clicking run in Rstudio).
 
 Depending on what data (simulated or real) you will be using instructions starting from "Step three" may vary. Below we provide the steps to follow if you are using simulated data using the original scrm R package, our escrm simulator (for advanced users), or real data.
 
@@ -42,6 +42,12 @@ Step five: Extract the zip file containing the data and modify the path on line 
 Step six: Modify the prior knowledge parameters of the ecological variables (bounding and priors of variables to be estimated) if working on a different data set (lines 12 to 27 of the script).
 
 Step seven: Execute the code (1 to 2 hours of run time, depending on the data set, the analysis run and the machine used). To reduce computation time one can reduce the number of hidden states (n) and reduce the number of analysed scaffolds (line 34 of the script). Note: Do not worry if the message "unsuccessful convergence" appears. This message is printed by the package "BB" because we limited the number of itirations when optimizing the likelihood.
+
+Plotring without the plotting function: 
+
+The scaling is similar to MSMC or MSMC2.
+For time (x axix), do :  results$Tc * (results$mu/mu) * gen 
+For population size (y axis), do results$Xi * (results$mu/(2*mu))  
 
 
 Warnings: 
