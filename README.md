@@ -46,8 +46,10 @@ Step seven: Execute the code (1 to 2 hours of run time, depending on the data se
 Plotring without the plotting function: 
 
 The scaling is similar to MSMC or MSMC2.
-For time (x axix), do :  results$Tc * (results$mu/mu) * gen 
-For population size (y axis), do results$Xi * (results$mu/(2*mu))  
+
+For time (x axix), do :  results$Tc * (results$mu/mu) * gen .
+
+For population size (y axis), do results$Xi * (results$mu/(2*mu)) .   
 
 
 Warnings: 
