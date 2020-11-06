@@ -1,6 +1,9 @@
 # eSMC
 Contains the R-package to run eSMC, as well as script examples and a dataset (Daphnia pulex data) on which to run them. A detailed description of the method can be found here: https://doi.org/10.1101/701185
 
+A new version of eSMC is out (eSMC2), with new features, improvement and corrections : https://github.com/TPPSellinger/eSMC2 . 
+
+
 Input file:
 
 The input file for eSMC is a "Segregating Matrix". The matrix must have M+1 lines (M is the number of haplotypes). The first M lines of the Segregating Matrix are the nucleotides of the M haplotypes at all the SNP positions (it can be encoded as nucleotide letters or as numbers). The last line of the matrix contains the position on the sequence of the SNPs. The number of columns is thus equal to the number of SNPs. The Segregating Matrix can be built from a multihetsep file (https://github.com/stschiff/msmc/blob/master/guide.md) or from simulated data through functions of the package. 
