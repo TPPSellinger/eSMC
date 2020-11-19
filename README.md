@@ -6,13 +6,13 @@ A new version of eSMC is out (eSMC2), with new features, improvement and correct
 
 Input file:
 
-The input file for eSMC is a "Segregating Matrix". The matrix must have M+1 lines (M is the number of haplotypes). The first M lines of the Segregating Matrix are the nucleotides of the M haplotypes at all the SNP positions (it can be encoded as nucleotide letters or as numbers). The last line of the matrix contains the position on the sequence of the SNPs. The number of columns is thus equal to the number of SNPs. The Segregating Matrix can be built from a multihetsep file (https://github.com/stschiff/msmc/blob/master/guide.md) or from simulated data through functions of the package. 
+The input file for eSMC is a "Segregating Matrix". The matrix must have M+2 lines (M is the number of haplotypes). The first M lines of the Segregating Matrix are the nucleotides of the M haplotypes at all the SNP positions (it can be encoded as nucleotide letters or as numbers). The M+1 line indicate the number of called sites (as in MSMC). The last line of the matrix contains the position on the sequence of the SNPs. The number of columns is thus equal to the number of SNPs. The Segregating Matrix can be built from a multihetsep file (https://github.com/stschiff/msmc/blob/master/guide.md) or from simulated data through functions of the package. 
 
 How to use eSMC:
 
 Step one: Download or clone the repository eSMC (We recommand the use of the latest version). Extract the zip file.
 
-Step two: Open the script install_eSMC.R in Rstudio or a text editor. Make sure the path of the package (eSMC_1.0.5.tar.gz) is correct (line 6), name of package may depend on it's version. If the package is in a different folder, modify the path to the correct folder. Execute the script to install the package on your local machine (by selecting everything and then clicking run in Rstudio).
+Step two: Open the script install_eSMC.R in Rstudio or a text editor. Make sure the path of the package (eSMC_2.0.0.tar.gz) is correct (line 6), name of package may depend on it's version. If the package is in a different folder, modify the path to the correct folder. Execute the script to install the package on your local machine (by selecting everything and then clicking run in Rstudio).
 
 Depending on what data (simulated or real) you will be using instructions starting from "Step three" may vary. Below we provide the steps to follow if you are using simulated data using the original scrm R package, our escrm simulator (for advanced users), or real data.
 
