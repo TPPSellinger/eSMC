@@ -42,7 +42,7 @@ for(scaffold in 1:19){
     scaffold_n=paste("0",as.character(scaffold),sep="")
   }
   filename=paste("SRR5004865.FLTH010000",scaffold_n,".multihetsep.txt",sep="") # Put character string of the multihetsep file name
-  data=Get_real_data(path,M,filename)
+  data=Get_real_data(path,M,filename,delim="\t")
   full_data[[scaffold]]=data
 }
 
