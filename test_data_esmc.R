@@ -52,7 +52,7 @@ for(scaffold in 1:19){
 # Run analysis #
 ################
 
-result=eSMC(n=30,rho=rho,full_data,BoxB=BoxB,Boxs=Boxs,SB=SB,SF=SF,Rho=ER,Check=F,NC=NC,symbol_number=25) 
+result=eSMC(n=30,rho=rho,full_data,BoxB=BoxB,Boxs=Boxs,SB=SB,SF=SF,Rho=ER,Check=F,NC=NC) 
 
 
 ################
