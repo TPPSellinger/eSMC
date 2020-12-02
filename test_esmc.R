@@ -15,7 +15,7 @@ L=L*1000000
 nsim=1 # Number of simulation
 Pop=10^4 # Population size
 mu=2.5*10^-8  # Mutation rate per position per generation <
-theta=(mu*L*2*Pop) # theta waterson per Mb
+theta=(mu*L*4*Pop) # theta waterson per Mb
 rho=0.5 # ratio r/mu
 total=list()
 sigma=0 # selfing rate
@@ -79,7 +79,7 @@ SF=F # TRUE to estimate selfing
 
 for(x in 1:nsim){
   # esmc
-  test=eSMC(n=40,rho=1,O_total[[x]],maxit =20,symbol_number=30,BoxB=c(0.05,1),BoxP=c(3,3),Boxr=c(1,1),Boxs=c(0,0.97),pop=F,SB=SB,SF=SF,Rho=ER,Check=F,BW=F,NC=1,path_simu ="~/escrm",pop_vect =rep(2,20)) 
+  test=eSMC(n=40,rho=1,O_total[[x]],maxit =20,BoxB=c(0.05,1),BoxP=c(3,3),Boxr=c(1,1),Boxs=c(0,0.97),pop=F,SB=SB,SF=SF,Rho=ER,Check=F,BW=F,NC=1,pop_vect =rep(2,20)) 
   total[[(1+length(total))]]=test
 }
 
